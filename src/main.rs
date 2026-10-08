@@ -1,9 +1,7 @@
 //! gray-git-merge — `/merge <branch>` plus a `git_conflicts` resolve loop.
 //!
-//! Port of pi's `git-merge-and-resolve` extension. pi merged the upstream
-//! after every agent turn; gray's wire has no per-turn merge hook that fits,
-//! so merging is explicit: `/merge <branch>` runs `git merge` in the session
-//! repo. A clean merge reports as `{text}`; a conflicted one returns
+//! Gray's wire has no per-turn merge hook that fits, so merging is
+//! explicit: `/merge <branch>` runs `git merge` in the session repo. A clean merge reports as `{text}`; a conflicted one returns
 //! `{prompt}` — the host feeds it back as a user message telling the model
 //! to fix the markers — and the `git_conflicts` tool enumerates remaining
 //! unmerged paths and stages resolved ones.

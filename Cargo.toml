@@ -4,7 +4,7 @@ version = "0.1.0"
 edition = "2024"
 rust-version = "1.91"
 license = "MIT"
-description = "/merge <branch> runs git merge; conflicts hand the model a resolve prompt + git_conflicts tool. Port of pi's git-merge-and-resolve."
+description = "/merge <branch> runs git merge; conflicts hand the model a resolve prompt + git_conflicts tool"
 
 [[bin]]
 name = "gray-git-merge"
