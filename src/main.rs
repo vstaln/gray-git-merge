@@ -32,6 +32,7 @@ fn manifest() -> Value {
             }
         }],
         "commands": ["/merge"],
+        "command_descriptions": {"/merge": "merge a branch and fix conflicts"},
     })
 }
 
